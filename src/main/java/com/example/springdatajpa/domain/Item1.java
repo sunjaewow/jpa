@@ -16,15 +16,3 @@ public abstract class Item1 {
 
 }
 
-@Entity
-@DiscriminatorValue("A")
-public class Album extends Item1 {
-    private String artist;
-}
-
-@Entity
-@DiscriminatorValue("M")
-public class Movie extends Item1 {
-    private String director;
-    private String actor;
-}
