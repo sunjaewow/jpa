@@ -18,11 +18,8 @@ public class Member {
 
     private String username;
 
-    private String city;
-
-    private String street;
-
-    private String zipcode;
+    @Embedded
+    private Address address;
 
     @OneToMany(mappedBy = "member")
     private List<OrderT> orders = new ArrayList<OrderT>();
